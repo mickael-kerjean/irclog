@@ -1,0 +1,6 @@
+package ctrl
+
+func StaticHandler() {
+}
+
+

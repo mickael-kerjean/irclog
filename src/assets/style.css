@@ -1,0 +1,88 @@
+:root {
+    --bg-color: #f4f4f4;
+    --color: #333333;
+    --emphasis: #455164;
+}
+html { height: 100%; }
+body { font-family: 'Source Code Pro', monospace; background: var(--bg-color); color: var(--color); font-size: 16px; margin: 0; }
+.container{ max-width: 700px; width: 95%; margin: 0 auto; margin-top: 100px; position: relative; }
+
+/* HEADER */
+.header{
+    background: var(--emphasis);
+    color: #99a2b4;
+    padding: 15px 0;
+    z-index: 1;
+    position: fixed;
+    top:0;
+    left:0;
+    right: 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.header form{ display: inline-block; }
+.header form input{
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+    border: inherit;
+    width: 280px;
+    padding: 7px 10px;
+    font-size: 1em;
+    color: #ccc;
+}
+.header form input:focus{
+    outline: none;
+}
+
+/* MESSAGE */
+.container > div {
+    padding: 5px;
+    margin: 2px 0;
+}
+.container > div:hover {
+    background: rgba(255,255,255,0.5);
+}
+span.time{
+    color: #ddd;
+    float: right;
+}
+span.author{
+    display: inline-block;
+    width: 110px;
+    color: var(--emphasis);
+    font-weight: bold;
+    text-transform: capitalize;
+}
+span.message{
+    display: block;
+}
+/* DATE STAMP */
+h2 {
+    font-style: italic;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: normal;
+}       
+h2:before,
+h2:after {
+    content: '';
+    border-top: 2px solid;
+    margin: 0 20px 0 0;
+    flex: 1 0 20px;
+}
+h2:after {
+    margin: 0 0 0 20px;
+}
+
+.writer{
+    display: block;
+    background: white;
+    margin: 20px 0 25px;
+    padding: 20px;
+    border-radius: 2px;
+    text-decoration: none;
+    color: #ccc;
+}
